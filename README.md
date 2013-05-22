@@ -1,7 +1,8 @@
 # sshame
 
 I wrote `sshame` to collect IP addresses and information about bad
-authentication attempts on my servers.
+authentication attempts on servers. I use the output as a rolling
+blacklist for filewalls, and to help diagnose connection issues.
 
 ## Requirements
 
