@@ -7,7 +7,7 @@ blacklist for filewalls, and to help diagnose connection issues.
 ## Requirements
 
 `sshame` needs [Ruby](http://ruby-lang.org/), and an `sshd` authentication
-log (probably `auth.log`).
+log (it's `/var/log/auth.log` in Ubuntu).
 
 ## Installation
 
