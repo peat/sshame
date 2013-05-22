@@ -1,8 +1,12 @@
 # sshame
 
-I wrote `sshame` to collect IP addresses and information about bad
-SSH authentication attempts. I use the output as a rolling
-blacklist for filewalls, and to help diagnose connection issues.
+I wrote `sshame` to collect IP addresses for SSH scanners. I use the 
+output as a rolling blacklist for filewalls, and to help diagnose
+connection issues.
+
+`sshame` only discovers attempts with invalid user names, the most
+common scanning approach. It is not meant to be a comprehensive
+authentication monitor -- there are much better tools for that. :)
 
 ## Requirements
 
@@ -67,3 +71,19 @@ And of course all of these options can be combined as you see fit:
 $ sshame -f auth.log -l -c -t 50
 129.194.160.23  72        a,seinfeld,contest,princess,maggie,...
 ```
+
+## License
+
+Copyright 2013 Peat Bakke (peat@peat.org)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
