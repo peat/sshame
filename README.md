@@ -1,6 +1,6 @@
 # sshame
 
-I wrote `sshame` to collect IP addresses for SSH scanners. I use the 
+I wrote `sshame` to collect IP addresses of SSH scanners. I use the 
 output as a rolling blacklist for filewalls, and to help diagnose
 connection issues.
 
