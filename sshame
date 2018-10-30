@@ -30,7 +30,7 @@ cfg = { :threshold => 1 }
 OptionParser.new do |o|
   o.on('-h', "Print out this help.") { puts o; exit }
   o.on('-f', '--file FILENAME', String, "Log file to read. Defaults to stdin.") { |f| cfg[:filename] = f }
-  o.on('-t', '--threadhold NUMBER', Integer, "Threshold for failed authentication attempts. Defaults to #{cfg[:threshold]}.") { |t| cfg[:threshold] = t }
+  o.on('-t', '--threshold NUMBER', Integer, "Threshold for failed authentication attempts. Defaults to #{cfg[:threshold]}.") { |t| cfg[:threshold] = t }
   o.on('-c', '--count', "Includes a count of attempts per IP address.") { |c| cfg[:count] = c }
   o.on('-l', '--list', "Includes a comma delimited list of users per IP address") { |l| cfg[:list] = l }
 
